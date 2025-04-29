@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reciclaje de PET</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom right, #e6f9f0, #c4f0c5);
+            font-family: Arial, sans-serif;
+            color: #2e2e2e;
+        }
+
+        .container {
+    max-width: 900px;
+    margin: 70px auto 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 3px solid #7fc29b;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(105, 101, 101, 0.1);
+    text-align: center;
+    min-height: 1000px; /* O el valor que desees */
+}
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #1d473a;
+            background-color: #d3f2e3;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2b6653;
+            font-size: 28px;
+            background-color: #c0e5d1;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .imagenes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .enlaces {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e0f5e8;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .enlaces a {
+            display: block;
+            margin: 10px 0;
+            color: #2b6653;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .enlaces a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2b6653;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #1d473a;
+        }
+
+        /* Menú de hamburguesa */
+        .menu {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+
+        .menu-toggle {
+            background-color: #2b6653;
+            border: none;
+            color: white;
+            font-size: 26px;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .menu-links {
+            display: none;
+            flex-direction: column;
+            background-color: #ffffff;
+            border: 2px solid #2b6653;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .menu-links a {
+            padding: 10px;
+            text-decoration: none;
+            color: #2b6653;
+            font-weight: bold;
+        }
+
+        .menu-links a:hover {
+            background-color: #c0e5d1;
+            border-radius: 8px;
+        }
+        .cartel-img {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Menú Hamburguesa -->
+    <div class="menu">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="menu-links" id="menuLinks">
+            <a href="#proceso" onclick="closeMenu()">Proceso</a>
+            <a href="#beneficios" onclick="closeMenu()">Beneficios</a>
+            <a href="#productos" onclick="closeMenu()">Productos</a>
+            <a href="#enlaces" onclick="closeMenu()">Enlaces</a>
+            <a href="#cartel" onclick="closeMenu()">Cartel</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>RECICLADO DEL PET</h1>
+
+        <h2 id="proceso">Proceso de Reciclaje del PET</h2>
+       <p>El proceso de reciclaje del PET comienza con la recolección de botellas utilizadas en hogares, calles y centros de acopio. Estas botellas son llevadas a plantas de tratamiento donde se separan por tipo, color y grado de contaminación. Luego, se realiza una limpieza profunda para eliminar etiquetas, tapas, residuos orgánicos y cualquier otro contaminante. Después, el PET limpio se tritura en pequeñas hojuelas o flakes. Estas hojuelas son fundidas a altas temperaturas para moldearlas nuevamente en nuevos productos. También pueden ser sometidas a procesos de extrusión o inyección para fabricar fibras textiles. Así se generan nuevos productos reciclados, como envases, tejidos o láminas. Todo este proceso ayuda a reducir el impacto ambiental del plástico y a conservar los recursos naturales.</p> <p>El PET reciclado se utiliza en diversas industrias como la textil, alimenticia, automotriz y de la construcción. Su transformación permite crear nuevos envases de bebidas, ropa deportiva, alfombras, geotextiles o materiales de aislamiento. Una tonelada de PET reciclado ahorra hasta 3 toneladas de CO₂, equivalente a plantar decenas de árboles. Este proceso también disminuye la extracción de petróleo, ya que el plástico virgen requiere materia prima fósil como el etileno. Además, se fomenta la economía circular mediante la reutilización continua de materiales. Reciclar PET no solo es ecológico, sino también económico para muchas empresas que reducen sus costos de producción. Por eso, su correcta separación y acopio desde el origen son fundamentales para lograr productos de alta calidad.</p> <p>Las campañas de concientización ayudan a que más personas participen del reciclaje y entiendan su importancia para el medio ambiente. Desde escuelas, universidades, hasta empresas privadas y organizaciones civiles promueven su uso responsable mediante talleres, ferias y programas educativos. A través del reciclaje, los residuos dejan de ser basura para convertirse en valiosos recursos que impulsan una economía más sostenible. Esto se traduce en menos contaminación en ríos, mares y suelos, más empleo verde en plantas recicladoras, y menor daño a la naturaleza. El éxito del reciclaje de PET depende del compromiso de todos los sectores: gobierno, industria, instituciones educativas y ciudadanía. Por eso, cada acción individual cuenta en este gran esfuerzo conjunto. Separar, reciclar y reutilizar deben formar parte de nuestra rutina diaria para asegurar un futuro más limpio.</p>
+       <p>Además de los beneficios ambientales, el reciclaje de PET también ofrece importantes ventajas económicas. Las empresas que reciclan PET pueden reducir sus costos de producción al reutilizar materiales en lugar de depender de recursos vírgenes. Esto se traduce en productos más económicos y accesibles para los consumidores. Asimismo, el reciclaje de PET promueve la creación de empleos en la recolección, clasificación, procesamiento y fabricación de productos reciclados. A medida que más personas y empresas se suman a esta práctica, la cadena de valor del reciclaje se fortalece, beneficiando tanto a la economía local como al medio ambiente. Es una forma efectiva de generar un ciclo de vida más largo para los materiales y evitar que terminen como desechos en vertederos o en el mar.</p>
+       <div class="imagenes">
+        <a href="img/proceso1.jpg" target="_blank"><img src="https://adnoticias.mx/wp-content/uploads/2022/05/colecta-pet-reciclaje-plastico-botellas-uaemex-2.jpg" alt="Recolección PET"></a>
+        <a href="img/proceso2.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.DfnJhDL8_UwWjz8hN2QpmwHaD2?rs=1&pid=ImgDetMain" alt="Lavado PET"></a>
+        <a href="img/proceso3.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.Flmd8RhMWzlmUtXLTdwYygHaCn?rs=1&pid=ImgDetMain" alt="Transformación PET"></a>
+    </div>
+
+        <h2 id="beneficios">Beneficios Ambientales del Reciclaje</h2>
+        
+       <p>El reciclaje del PET disminuye la acumulación de residuos plásticos en vertederos y cuerpos de agua, los cuales, de no ser gestionados adecuadamente, pueden tardar cientos de años en descomponerse. Ayuda a conservar ecosistemas frágiles y protege la fauna que suele ingerir estos materiales, evitando que sufran daños en su salud o que mueran por asfixia o ingestión de plásticos. Además, disminuye la demanda de recursos naturales no renovables como el petróleo, fuente primaria para la producción de plásticos nuevos. Este ahorro se traduce en menos explotación de la tierra y menor necesidad de extracción de recursos fósiles. También, se evita la emisión de gases de efecto invernadero que contribuyen al calentamiento global. Es una herramienta esencial en la lucha contra el cambio climático, ya que reduce el impacto ambiental de las actividades humanas. Contribuye al desarrollo sostenible y al bienestar ambiental al promover un modelo de consumo más responsable.</p> <p>El PET reciclado permite ahorrar una significativa cantidad de energía en comparación con la producción de plástico nuevo, ya que el proceso de reciclaje es menos intensivo en términos de consumo energético. Usarlo en la industria reduce los costos de fabricación, lo que lo convierte en una opción atractiva para muchas empresas que buscan disminuir su huella de carbono. Además, mejora la imagen corporativa al mostrar un firme compromiso con el medio ambiente, lo que aumenta la lealtad de los consumidores y les atrae a marcas responsables. El reciclaje también promueve la economía circular, donde los productos y materiales se reutilizan una y otra vez, evitando el desperdicio y optimizando el consumo de recursos. Estos beneficios no solo se reflejan en el ambiente, sino también en la calidad de vida de las futuras generaciones, quienes podrán disfrutar de un planeta más limpio y saludable.</p> <p>Desde el punto de vista social, el reciclaje crea numerosos empleos en centros de acopio y procesamiento de PET, desde recolectores hasta operarios en plantas recicladoras. Muchas familias viven del comercio de PET reciclado, generando una fuente de ingresos sustentable para comunidades vulnerables. Además, refuerza la educación ambiental en comunidades, ya que los ciudadanos toman conciencia de su impacto ecológico y la importancia de separar sus residuos. Fomenta hábitos responsables como reducir el consumo de plásticos de un solo uso y optar por productos más duraderos y reciclables. Las ciudades se vuelven más limpias y sostenibles gracias a la participación activa de sus habitantes en la gestión de residuos. Es un hábito positivo que debemos fomentar desde casa y la escuela, creando una cultura de cuidado del medio ambiente que perdure a lo largo del tiempo.</p> <p>Además de sus beneficios ambientales y sociales, el reciclaje de PET también tiene un impacto positivo en la salud pública. Al reducir la cantidad de residuos plásticos que terminan en vertederos y océanos, se evita la proliferación de microorganismos patógenos que se desarrollan en la basura, los cuales pueden contaminar el aire, el agua y los suelos. Asimismo, las ciudades que implementan eficientemente programas de reciclaje experimentan una mejora en la calidad del aire, ya que la quema de residuos plásticos en basureros no es necesaria. La participación activa de la comunidad en el reciclaje también fortalece el sentido de responsabilidad colectiva, fomentando un entorno urbano más saludable. A largo plazo, este tipo de prácticas se traduce en menos enfermedades asociadas a la contaminación y una mayor calidad de vida para todos.</p>
+       <div class="imagenes">
+        <a href="img/beneficio1.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.CzWzCy14z35tONGWJ3F5EwHaEU?rs=1&pid=ImgDetMain" alt="Naturaleza limpia"></a>
+        <a href="img/beneficio2.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.EfBuZLTcDjrz4GWKL01G9wHaE7?rs=1&pid=ImgDetMain" alt="Ahorro de energía"></a>
+        <a href="img/beneficio3.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.koYBnh4N00BAF1LBRClYEgHaD4?rs=1&pid=ImgDetMain" alt="Educación ambiental"></a>
+    </div>
+
+        <h2 id="productos">Productos Elaborados con PET Reciclado</h2>
+       <p>Con el PET reciclado se pueden fabricar una amplia variedad de productos útiles y sostenibles, lo que demuestra la versatilidad de este material. Entre los más comunes están las prendas de vestir como camisetas, mochilas, chamarras y otros accesorios de moda. Estas prendas se fabrican a partir de fibras de PET reciclado que son suaves, resistentes y fáciles de mantener. También se hacen botellas nuevas para bebidas, detergentes, aceites y productos cosméticos, contribuyendo a reducir la necesidad de fabricar plástico nuevo. Otro uso frecuente es en la industria de la construcción, donde el PET reciclado se transforma en láminas, aislantes, tubos, paneles y materiales para techos resistentes. Incluso se elaboran juguetes, muebles, artículos de oficina, y hasta productos para la industria electrónica. </p>
+        <p>Los productos hechos con PET reciclado conservan una excelente calidad y durabilidad, lo que demuestra que el reciclaje no compromete la resistencia del material. Muchas marcas de moda sostenible utilizan PET reciclado en sus diseños, lo que les permite reducir el impacto ambiental sin sacrificar estilo ni funcionalidad. Además, existen avances tecnológicos que mejoran la calidad del material reciclado, permitiendo su uso en una mayor cantidad de aplicaciones. En la industria automotriz, por ejemplo, se emplea en alfombras, paneles interiores, asientos y componentes de los sistemas de climatización. Este tipo de aplicaciones demuestra la gran versatilidad del PET reciclado, que se adapta a sectores de alto rendimiento como la automoción y la construcción. </p> 
+        <p>La demanda de PET reciclado está creciendo cada año debido a la creciente conciencia ambiental y la presión por reducir la cantidad de residuos plásticos. Esto genera nuevas oportunidades de negocio en diversas industrias, desde la moda hasta la automotriz y la tecnología. Empresas especializadas en el reciclaje desarrollan constantemente innovación con plástico reciclado, lo que permite la creación de productos de mejor calidad y más diversificados. También se están estableciendo alianzas estratégicas entre recicladores, gobiernos e industrias para fomentar la recuperación del PET y su transformación en nuevos productos. Estas iniciativas refuerzan la economía circular, donde los materiales se mantienen en uso durante el mayor tiempo posible, y promueven el cuidado del planeta al reducir la necesidad de recursos vírgenes. </p> 
+        <p>Además de sus beneficios económicos y ambientales, el reciclaje de PET también ofrece oportunidades para la creación de empleo y el desarrollo de nuevas tecnologías. La creciente demanda de PET reciclado ha dado lugar a la apertura de nuevas plantas de reciclaje, generando puestos de trabajo en diversas etapas del proceso, desde la recolección y clasificación de botellas hasta la fabricación de productos finales. Estas oportunidades no solo benefician a los recicladores y a las empresas, sino que también contribuyen a la formación de profesionales en áreas como ingeniería ambiental, investigación y desarrollo, y sostenibilidad empresarial. De esta manera, el reciclaje de PET no solo ayuda a reducir la contaminación, sino que también impulsa el desarrollo de una economía más sostenible y socialmente responsable. </p>
+        <div class="imagenes">
+            <a href="img/producto1.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.S84w2CSouiv6uzuMTiR7bQAAAA?w=360&h=360&rs=1&pid=ImgDetMain" alt="Ropa reciclada"></a>
+            <a href="img/producto2.jpg" target="_blank"><img src="https://avatarenergia.com/wp-content/uploads/2020/11/botella-de-plastico-con-planta.jpg" alt="Botellas recicladas"></a>
+            <a href="img/producto3.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.bCIYuY268tq7axqTDS0HLwHaE8?rs=1&pid=ImgDetMain" alt="Muebles PET reciclado"></a>
+        </div>
+
+        <div class="enlaces" id="enlaces">
+            <h3>Empresas que reciclan PET</h3>
+            <a href="https://www.petstar.mx" target="_blank">PetStar</a>
+            <a href="https://www.alpla.com/es/mexico" target="_blank">ALPLA México</a>
+
+            <h3>Instituciones que promueven el cuidado ambiental</h3>
+            <a href="https://www.semarnat.gob.mx" target="_blank">SEMARNAT</a>
+            <a href="https://www.greenpeace.org/mexico" target="_blank">Greenpeace México</a>
+        </div>
+
+        <div id="cartel">
+            <div id="cartel">
+                <a class="btn" href="https://www.canva.com/design/DAGhSC-uYfA/wp-ODTqFbBoGAVHtTaQgjg/edit" target="_blank">Visita mi cartel informativo</a>
+                <br><br>
+                
+                <div style="position: relative; width: 100%; height: 0; padding-top: 64.7059%;
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                 <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                   src="https://www.canva.com/design/DAGhSC-uYfA/NXJmj4uYTHB4OIDp9MVEqg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                 </iframe>
+               </div>
+               
+            </div>
+            
+            
+        <footer>
+            <p>Nombre completo: Perez Morales Arianna</p>
+            <p>Grupo: 2AVPG</p>
+            <p>Materia: Cultura Digital</p>
+            <p>Nombre del docente: Cedillo Xochipa Patricia</p>
+            <p></p>
+            <p>                                    © Todos los derechos reservados | Arianna Perez Morales </p>
+        </footer>
+    </div>
+    
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menuLinks");
+            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        }
+
+        function closeMenu() {
+            document.getElementById("menuLinks").style.display = "none";
+        }
+    </script>
+</body>
+</html>
